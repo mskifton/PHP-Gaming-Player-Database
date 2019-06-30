@@ -1,0 +1,162 @@
+body{
+
+}
+
+.container {
+  min-height:82.7vh;
+  max-width: 800px;
+  margin: 20px auto 30px auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+li {
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.8rem;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 20px 15px 20px;
+  border-radius: 5px;
+  position: relative;
+  bottom: -15px;
+  cursor: pointer;
+}
+li:first-child {
+  background: white;
+  margin-left:15px;
+}
+.fa-circle {
+  position: relative;
+  bottom: 2.7px;
+  font-size: 20px;
+  right: 5px;
+}
+.green {
+  color: green;
+}
+.gray {
+  color: grey;
+}
+#streamers, #offline, #online {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+  position: relative;
+}
+.add {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.addstreamer {
+  padding-left: 10px;
+  border-radius: 5px;
+  width: 50%;
+  margin-right: 10px;
+  outline: none;
+  border: 0.5px solid grey;
+}
+.fa-plus-circle {
+  color: rgb(39, 174, 96);
+  position: relative;
+  bottom: -3.5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.fa-plus-circle:hover {
+  color: green;
+}
+.user {
+  height: 270px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  border: 1px solid;
+  background: white;
+  text-align: center;
+  max-width: 220px;
+  padding: 0;
+  box-shadow: 5px 5px 15px black;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.user:hover {
+  transform: scale(1.1, 1.1);
+  color: black;
+}
+
+img {
+  height: 210px;
+  width: 100%;
+  display: block;
+}
+.status {
+  background: rgba(127, 140, 141, 0.5);
+  padding: 3px;
+  color: white;
+  height: 29px;
+  bottom: -1px;
+  position: relative;
+}
+figure {
+  position: relative;
+  margin: 0;
+}
+figcaption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  height: 210px;
+  width: 220px;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.4s;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 0;
+  padding: 0 5px;
+  bottom: 0;
+  left: -240px;
+}
+.greenbg {
+  background: rgb(39, 174, 96);
+}
+.graybg {
+  background: rgb(44, 62, 80);
+}
+#streamers {
+  padding-top: 60px;
+}
+
+.line{
+  height:2px;
+  margin-bottom:5px;
+  width:100%;
+  background:white;
+}
+
+footer{
+
+}
+
+@media screen and (max-width: 500px) {
+  input {
+    width: 75%;
+  }
+  li {
+    display: block;
+    margin:0 0 10px 0;
+    width: 100%;
+    position: static;
+    padding: 5px;
+  }
+}
